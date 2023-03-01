@@ -5,12 +5,15 @@
   <title>Palíndromo</title>
 </head>
 <body>
+  
   <h1>Verificar Palíndromo</h1>
+
   <form>
     <label for="texto">Insira uma palavra ou frase:</label>
     <input type="text" id="texto" name="texto">
     <button type="button" onclick="verificarPalindromo()">Verificar</button>
   </form>
+
   <script>
     function verificarPalindromo() {
       let texto = document.getElementById('texto').value.trim();
@@ -27,5 +30,6 @@
       }
     }
   </script>
+
 </body>
 </html>
