@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function renderizarFrase(frase) {
+            const element = (
+                <h1>{frase}</h1>
+            )
+            ReactDOM.render(element, document.getElementById('root'))
+
+        }
+
+        let frase = "Venha estudar na FATEC"
+        let cont = 0
+
+
+        let intervalo = setInterval(() => {
+
+            let temp = ""
+
+            for (let i = 0; i < cont; i++) {
+                temp += frase[i]
+            }
+            renderizarFrase(temp)
+            cont++
+
+            if (cont > frase.length) {
+                clearInterval(intervalo)
+            }
+        }, 500)
+
+    </script>
+
+</body>
+
+</html>

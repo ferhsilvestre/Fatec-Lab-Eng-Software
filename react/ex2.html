@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // const element = (
+        //     <div>
+        //         <h1>Hello!</h1>
+        //         <h2>Good to see you here.</h2>
+        //     </div>)
+        // ReactDOM.render(element, document.getElementById('root'))
+
+        // const element = (
+        //     <h1 className="greeting">
+        //         Hello world!
+        //     </h1>
+        // )
+        // const element = React.createElement(
+        //     'h1',
+        //     {className: 'greeting'},
+        //     'Hello World!'
+        // )
+        // ReactDOM.render(element, document.getElementById('root'))
+
+        //exemplo 6
+        function tick() {
+            const element = (
+                <div>
+                    <h1>Hello World</h1>
+                    <h2>It is {new Date().toLocaleTimeString()}</h2>    
+                </div>
+            )
+            ReactDOM.render(element, document.getElementById('root'))
+        }
+        setInterval(tick, 1000)
+    </script>
+</body>
+</html>
