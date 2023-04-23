@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Letreiro from './Letreiro';
+import Relogio from './Relogio';
+// import Exemplos from './Exemplos';
+// import Profile from './Profile';
+import  {Contador}  from './Contador';
 
 function App() {
   return (
+    <>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +25,12 @@ function App() {
         </a>
       </header>
     </div>
+    <Letreiro />
+    <Relogio />
+    {/* <Exemplos /> */}
+    {/* <Profile /> */}
+    <Contador />
+    </>
   );
 }
 
