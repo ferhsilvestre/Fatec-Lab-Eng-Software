@@ -25,7 +25,7 @@
   margin-bottom: 10px;
 }
 
-button {
+.buttonCalculadora {
   width: 60px;
   height: 60px;
   font-size: 24px;
@@ -39,7 +39,7 @@ button {
   transition: all 0.3s, color 0.3s;
 }
 
-button:hover {
+.buttonCalculadora:hover {
   filter: brightness(0.7);
 }
 

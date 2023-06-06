@@ -76,29 +76,29 @@ function Calculadora() {
     <div className="calculadora">
       <div className="display">{valorDisplay || "0"}</div>
       <div className="linha">
-        <button className={limparDisplay ? "botao-funcao" : "botao-funcao limpar"} onClick={limparDisplay ? limparTudo : limparUltimaEntrada}>
+        <button className={limparDisplay ? "botao-funcao buttonCalculadora" : "botao-funcao limpar buttonCalculadora"} onClick={limparDisplay ? limparTudo : limparUltimaEntrada}>
           {limparDisplay ? "AC" : "C"}
         </button>
-        <button className="botao-funcao" onClick={alterarSinal}>
+        <button className="botao-funcao buttonCalculadora" onClick={alterarSinal}>
           ±
         </button>
-        <button className="botao-funcao" onClick={() => adicionarOperacao("%")}>
+        <button className="botao-funcao buttonCalculadora" onClick={() => adicionarOperacao("%")}>
           %
         </button>
-        <button className="botao-operacao" onClick={() => adicionarOperacao("/")}>
+        <button className="botao-operacao buttonCalculadora" onClick={() => adicionarOperacao("/")}>
           ÷
         </button>
       </div>
       <div className="linha">
       {
         ["7", "8", "9"].map((digito) => (
-          <button key={digito} className="botao-numero" onClick={() => adicionarDigito(digito)}>
+          <button key={digito} className="botao-numero buttonCalculadora" onClick={() => adicionarDigito(digito)}>
         {digito}
         </button>
         ))
       }
        
-        <button className="botao-operacao" onClick={() => adicionarOperacao("*")}>
+        <button className="botao-operacao buttonCalculadora" onClick={() => adicionarOperacao("*")}>
           ×
         </button>
 
@@ -107,35 +107,35 @@ function Calculadora() {
 
       {
         ["4", "5", "6"].map((digito) => (
-          <button key={digito} className="botao-numero" onClick={() => adicionarDigito(digito)}>
+          <button key={digito} className="botao-numero buttonCalculadora" onClick={() => adicionarDigito(digito)}>
         {digito}
         </button>
         ))
       }
-        <button className="botao-operacao" onClick={() => adicionarOperacao("-")}>
+        <button className="botao-operacao buttonCalculadora" onClick={() => adicionarOperacao("-")}>
           −
         </button>
       </div>
       <div className="linha">
       {
         ["1", "2", "3"].map((digito) => (
-          <button key={digito} className="botao-numero" onClick={() => adicionarDigito(digito)}>
+          <button key={digito} className="botao-numero buttonCalculadora" onClick={() => adicionarDigito(digito)}>
         {digito}
         </button>
         ))
       }
-        <button className="botao-operacao" onClick={() => adicionarOperacao("+")}>
+        <button className="botao-operacao buttonCalculadora" onClick={() => adicionarOperacao("+")}>
           +
         </button>
       </div>
       <div className="linha">
-        <button className="botao-numero-zero" onClick={() => adicionarDigito("0")}>
+        <button className="botao-numero-zero buttonCalculadora" onClick={() => adicionarDigito("0")}>
           0
         </button>
-        <button className="botao-numero" onClick={() => adicionarDigito(".")}>
+        <button className="botao-numero buttonCalculadora" onClick={() => adicionarDigito(".")}>
           .
         </button>
-        <button className="botao-igual" onClick={calcularResultado}>
+        <button className="botao-igual buttonCalculadora" onClick={calcularResultado}>
           🦇
         </button>
       </div>

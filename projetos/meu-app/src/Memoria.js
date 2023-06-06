@@ -143,7 +143,7 @@ const JogoDaMemoria = () => {
       </div>
     );
   } else {
-    return <>Parabens, voce finalizou !</>;
+    return <>Parabéns, você finalizou !</>;
   }
 };
 

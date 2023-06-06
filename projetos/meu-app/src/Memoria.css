@@ -8,11 +8,6 @@
   flex-direction: column;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .cartas {
   display: flex;
   flex-wrap: wrap;
